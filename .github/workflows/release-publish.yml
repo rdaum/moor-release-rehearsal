@@ -60,7 +60,7 @@ jobs:
           echo "tag=$tag" >> "$GITHUB_OUTPUT"
           echo "major_minor=$major_minor" >> "$GITHUB_OUTPUT"
           echo "stable=$stable" >> "$GITHUB_OUTPUT"
-          echo "namespace=${GITHUB_REPOSITORY_OWNER,,}" >> "$GITHUB_OUTPUT"
+          echo "namespace=${GITHUB_REPOSITORY,,}" >> "$GITHUB_OUTPUT"
 
       - name: Check out release tag
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
